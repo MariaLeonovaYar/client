@@ -10,17 +10,11 @@ class LockList extends Component {
 
     constructor(props) {
         super(props);
-        
         this.state = {
+            editing: false,
             data: [[]]
-
           };
     }
-
-    textClickHandler() {
-        console.log('text click');
-        editing = true;
-      }
 
     reloadUserData = () => {
         console.log("Запрос на получение данных..");
@@ -70,10 +64,11 @@ class LockList extends Component {
                     <div class="design_lock">
                         <img className="image" src={require('../style/img/замок3.png')}/>
                         <p>Пользователь: {localStorage.getItem('username')}</p>
-                        <p>Человек:<div onClick={this.textClickHandler}>{this.state.data[2]}</div></p>
-                        <p>Сообщение:<div onClick={this.textClickHandler}>{this.state.data[3]}</div></p>
                         <p>Размер: {this.state.data[0]}</p>
+                        <p>Человек:{this.state.data[2]}</p>
+                        <p>Сообщение: {this.state.data[3]}</p>
                     </div>
+                       
                         <button type="submit" class="btn btn-danger" onClick={this.clickDeleteHandler}>Удалить замочек</button>   
                   </div>
                   </div>
@@ -90,10 +85,11 @@ class LockList extends Component {
                     <div class="design_lock">
                         <img className="image" src={require('../style/img/замок2.png')}/>
                         <p>Пользователь: {localStorage.getItem('username')}</p>
-                        <p>Человек:<div onClick={this.textClickHandler}>{this.state.data[2]}</div></p>
-                        <p>Сообщение:<div onClick={this.textClickHandler}>{this.state.data[3]}</div></p>
+                        <p>Человек:{this.state.data[2]}</p>
+                        <p>Сообщение: {this.state.data[3]}</p>
                         <p>Размер: {this.state.data[0]}</p>
                     </div>
+                           
                         <button type="submit" class="btn btn-danger" onClick={this.clickDeleteHandler}>Удалить замочек</button>   
                   </div>
                   </div>
@@ -111,10 +107,11 @@ class LockList extends Component {
                     <div class="design_lock">
                         <img className="image" src={require('../style/img/замок.png')}/>
                         <p>Пользователь: {localStorage.getItem('username')}</p>
-                        <p>Человек:<div onClick={this.textClickHandler}>{this.state.data[2]}</div></p>
-                        <p>Сообщение:<div onClick={this.textClickHandler}>{this.state.data[3]}</div></p>
+                        <p>Человек:{this.state.data[2]}</p>
+                        <p>Сообщение: {this.state.data[3]}</p>
                         <p>Размер: {this.state.data[0]}</p>
                     </div>
+                       
                         <button type="submit" class="btn btn-danger" onClick={this.clickDeleteHandler}>Удалить замочек</button>   
                   </div>
                   </div>
