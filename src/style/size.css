@@ -1,0 +1,168 @@
+body{
+    background: #faf8f2;
+}
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Подключаем шрифты*/
+@font-face {
+    font-family: 'allneed';
+    src: url(./fonts/allneed2.ttf);
+}
+@font-face {
+    font-family: 'text';
+    src: url(./fonts/text.ttf);
+}
+
+a{
+    font-family: 'text';
+    text-decoration: none;
+}
+
+p {
+    font-family: 'allneed';
+    margin-top: 0px;
+}
+
+/*Лого*/
+h2{
+    font-size: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 20px;
+    padding-left: 20px;
+    color: #ff6969;
+    font-family: "allneed";
+}
+
+/*Вход*/
+.menu{
+    font-size: 15px;
+    font-family: "allneed";
+    list-style: none;
+    margin-top: -60px;
+    margin-right: 20px;
+    padding-right: 20px;
+    text-align: right;
+    color: #1B1C20;
+}
+
+/*Заголовок*/
+.l-Title{
+    font-size: 40px;
+    margin-top: 60px;
+    padding-top: 0px;
+    text-align: center;
+    color: #1B1C20;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+    text-align: center;
+}
+
+td{
+    width: 20vw;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #ff6969;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: 2px solid #ff6969;
+    border-radius: 50%;
+}
+input:checked {
+    border: 10px solid #ff6969;
+}
+
+/*Кнопка1*/
+.button1{
+    background-color: #ffffff;
+    border: 1px solid #ff6969;
+    color: #1B1C20;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+/*Кнопка2*/
+.button2{
+    background-color: #ff6969;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.btn{
+    text-align: center;
+}
+
+@media screen and (max-width: 780px){
+    /*Лого*/
+    h2{
+        font-size: 20px;
+        margin-left: 5px;
+        padding-left: 10px;
+}
+
+    /*Вход*/
+    .menu{
+        margin-top: -45px;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    td{
+        width: 25vw;
+        height: 200px;
+
+    }
+}
+
+@media screen and (max-width: 350px){
+    /*Лого*/
+    h2{
+        font-size: 20px;
+        margin-left: 5px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    /*Вход*/
+    .menu{
+        margin-top: -45px;
+        margin-right: 10px;
+        padding-right: 10px;
+    }
+
+    /*Заголовок*/
+    .l-Title{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
