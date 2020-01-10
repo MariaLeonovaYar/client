@@ -20,7 +20,7 @@ class LockList extends Component {
     textClickHandler() {
         console.log('text click');
         this.setState({
-          editing: true
+          'editing': true
         });
       }
 
