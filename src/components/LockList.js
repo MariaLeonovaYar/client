@@ -65,8 +65,8 @@ class LockList extends Component {
                     <div class="design_lock">
                         <img className="image" src={require('../style/img/замок3.png')}/>
                         <p>Пользователь: {localStorage.getItem('username')}</p>
-                        <p>Человек: {this.state.data[2]}</p>
-                        <p>Сообщение: {this.state.data[3]}</p>
+                        <p onClick={this.textClickHandler}>Человек: {this.state.data[2]}</p>
+                        <p onClick={this.textClickHandler}>Сообщение: {this.state.data[3]}</p>
                         <p>Размер: {this.state.data[0]}</p>
                     </div>
                         <button type="submit" class="btn btn-danger" onClick={this.clickDeleteHandler}>Удалить замочек</button>   
@@ -85,8 +85,8 @@ class LockList extends Component {
                     <div class="design_lock">
                         <img className="image" src={require('../style/img/замок2.png')}/>
                         <p>Пользователь: {localStorage.getItem('username')}</p>
-                        <p>Человек: {this.state.data[2]}</p>
-                        <p>Сообщение: {this.state.data[3]}</p>
+                        <p onClick={this.textClickHandler}>Человек: {this.state.data[2]}</p>
+                        <p onClick={this.textClickHandler}>Сообщение: {this.state.data[3]}</p>
                         <p>Размер: {this.state.data[0]}</p>
                     </div>
                         <button type="submit" class="btn btn-danger" onClick={this.clickDeleteHandler}>Удалить замочек</button>   
@@ -106,8 +106,8 @@ class LockList extends Component {
                     <div class="design_lock">
                         <img className="image" src={require('../style/img/замок.png')}/>
                         <p>Пользователь: {localStorage.getItem('username')}</p>
-                        <p>Человек: {this.state.data[2]}</p>
-                        <p>Сообщение: {this.state.data[3]}</p>
+                        <p onClick={this.textClickHandler}>Человек: {this.state.data[2]}</p>
+                        <p onClick={this.textClickHandler}>Сообщение: {this.state.data[3]}</p>
                         <p>Размер: {this.state.data[0]}</p>
                     </div>
                         <button type="submit" class="btn btn-danger" onClick={this.clickDeleteHandler}>Удалить замочек</button>   
