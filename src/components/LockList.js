@@ -4,6 +4,7 @@ import {delete_lock_id} from "../api/DeleteLock";
 
 
 var ID;
+var editing = false;
 
 class LockList extends Component {
 
@@ -11,7 +12,6 @@ class LockList extends Component {
         super(props);
         
         this.state = {
-            editing: false,
             data: [[]]
 
           };
@@ -19,9 +19,7 @@ class LockList extends Component {
 
     textClickHandler() {
         console.log('text click');
-        this.setState({
-          'editing': true
-        });
+        editing = true;
       }
 
     reloadUserData = () => {
