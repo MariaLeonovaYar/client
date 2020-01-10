@@ -17,6 +17,13 @@ class LockList extends Component {
           };
     }
 
+    textClickHandler() {
+        console.log('text click');
+        this.setState({
+          editing: true
+        });
+      }
+
     reloadUserData = () => {
         console.log("Запрос на получение данных..");
         console.log(String(localStorage.getItem('username')));
