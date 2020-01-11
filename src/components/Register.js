@@ -5,10 +5,10 @@ import {sendInputValue} from "../api/InputValues";
 
 class Register extends Component {
     clickHandler() {
-        const name = document.getElementById("name").value;
-        const surname = document.getElementById("surname").value;
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const name = String(document.getElementById("name").value).replace(/\s+/g, '');
+        const surname = String(document.getElementById("surname").value).replace(/\s+/g, '');
+        const username = String(document.getElementById("username").value).replace(/\s+/g, '');
+        const password = String(document.getElementById("password").value).replace(/\s+/g, '');
         sendInputValue(name, surname, username, password);
     }
 
