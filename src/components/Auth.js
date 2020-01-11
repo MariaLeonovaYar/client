@@ -4,8 +4,8 @@ import {sendUsernamePassword} from "../api/Auth";
 class Auth extends Component {
     
     clickHandler() {
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
+        const username = String(document.getElementById("username").value).replace(/\s+/g, '');
+        const password = String(document.getElementById("password").value).replace(/\s+/g, '');
         sendUsernamePassword(String(username), String(password));
     }
      
